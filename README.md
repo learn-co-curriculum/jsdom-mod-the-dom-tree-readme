@@ -88,10 +88,9 @@ We could simply treat it as the tree
 
 ## Practice exploring the DOM
 
-Remember when we said that we could organize our tree in such a way that a
-node's metadata didn't interfere with finding its children? It turns out that
-not only does providing additional information about a node make it more
-_useful_, it also makes it easier to find.
+Our tree is organized in such a way that a node's metadata doesn't interfere
+with finding its children. Not only does providing additional information about
+a node make it more _useful_, it also makes it easier to find.
 
 ### Finding a Node
 
@@ -123,7 +122,7 @@ not in the `</h5>` tag, in this case).
 Open up your web inspector (command+option+j on OS X) and find an element on the
 page — make note of its `id`. Then open up your console, type
 `document.getElementById('theIdYouTookNoteOf')`, and check out your handy dandy
-DOM node. Try changing a few of its properties!
+DOM node.
 
 #### `document.getElementsByClassName()`
 
@@ -152,7 +151,7 @@ Given the following DOM tree
 </div>
 ```
 
-we could find all of the elements with `className === 'banner'` by calling
+we could find all of the elements with the class name "banner" by calling
 `document.getElementsByClassName('banner')`.
 
 **Try it out!**
@@ -166,7 +165,7 @@ document.getElementsByClassName('banner')`.)
 #### `document.getElementsByTagName()`
 
 Suppose you don't know an element's ID but you do know its tag name (the tag
-name is the main thing between the `<>`, e.g., `'div'`, `'span'`, `'h1'`, etc.).
+name is the main thing between the `<>`, e.g., `'div'`, `'h1'`, `header`, `article` etc.).
 Since tag names aren't unique, this method returns an HTMLCollection of 0 to
 many nodes with the given tag.
 
@@ -205,7 +204,7 @@ open the file up in your browser to play along!)
 ```
 
 how would we go about changing only the second "Hello!" to "Goodbye!"? We
-couldn't just iterate over `document.getElementsByTagName('div')`, checking for
+can't just iterate over `document.getElementsByTagName('div')`, checking for
 `textContent === "Hello!"`, because we'd inadvertently change all three
 "Hello!"s. More importantly, the DOM might change (more on that later), and we
 want to make sure that we're updating the right element.
@@ -233,9 +232,9 @@ const p = div.getElementsByTagName('p')[0]
 p.textContent = "Goodbye!"
 ```
 
-Obviously, this way of accessing that text isn't fully generic, but it does a
-good job of demonstrating the basic tools available to us for finding and
-manipulating HTML elements.
+Obviously, this way of accessing that text isn't efficient and won't work on all
+pages, but it does a good job of demonstrating the basic tools available to us
+for finding and manipulating HTML elements.
 
 ## Resources
 
