@@ -205,7 +205,7 @@ open the file up in your browser to play along!)
 
 how would we go about changing only the second "Hello!" to "Goodbye!"? We
 can't just iterate over `document.getElementsByTagName('div')`, checking for
-`textContent === "Hello!"`, because we'd inadvertently change all three
+whether `textContent` is set to `"Hello!"`, because we'd inadvertently change all three
 "Hello!"s. More importantly, the DOM might change (more on that later), and we
 want to make sure that we're updating the right element.
 
