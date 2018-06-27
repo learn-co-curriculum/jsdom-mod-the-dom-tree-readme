@@ -2,15 +2,25 @@
 
 ## Problem Statement
 
-If we want to be able to select any element on our web page via the DOM, we need
-to understand the way the DOM is structured. By tracing its hierarchy, we can
-quickly and efficiently select the elements we need.
+Recall that DOM programming is using JavaScript to:
+
+1. Ask the DOM to find an HTML element or elements in the rendered page
+2. Remove the selected element(s) or add a new element next to the selected element
+3. Adjust a property of the selected element(s)
+
+In previous lessons we were given the command to find the HTML element we
+wanted to delete. In this lesson, we'll learn the _methods_ on the DOM we need
+to use  to find (or "select") the HTML element.
+
+To understand those _methods_, we need to take a quick moment to talk about how
+the DOM tree (i.e. what we see in the 'Elements' panel of our DevTools) is used
+to help the DOM's _methods_ find the right nodes.
 
 ## Objectives
 
 1. Define the computer science version of "tree"
 2. Describe how the DOM works as a tree
-3. Practice exploring the DOM
+3. Explain the DOM _methods_ used to find HTML elements
 
 ## Define the Computer Science Version of "Tree"
 
@@ -26,9 +36,12 @@ The DOM works basically the same way, except we usually talk about the root as
 being at the top of the DOM and the leaves being the most deeply nested HTML
 elements. So basically, we can imagine a tree turned on its head.
 
+![DOM Tree Graphic](https://curriculum-content.s3.amazonaws.com/skills-front-end-web-development/js-dom-and-events-the-dom-is-a-tree-readme/DOM-model.svg)
+
 ## Describe How the DOM Works as a Tree
 
-An interesting property of trees is that every tree can contain _subtrees_, which we can, for all intents and purposes, treat independently of their parent trees.
+An interesting property of trees is that every tree can contain _subtrees_,
+which we can treat independently of their parent trees.
 
 Practically speaking, the DOM begins at `<html>`, but we should think carefully
 about manipulating what's between the `<head></head>` tags. Instead, we can look
@@ -242,6 +255,7 @@ for finding and manipulating HTML elements.
 
 ## Conclusion
 
-Understanding the tree structure of the DOM helps us navigate its hierarchy. In subtrees and branches we can find the nodes we need by IDs, class names or tag names. Once we've selected our elements, we can use JavaScript to manipulate them.
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/the-dom-is-a-tree'>The DOM is a Tree</a> on Learn.co and start learning to code for free.</p>
+Understanding the tree structure of the DOM helps us navigate its hierarchy. In
+subtrees and branches we can find the nodes we need by IDs, class names or tag
+names. Once we've selected our elements, we can use JavaScript to manipulate
+them.
