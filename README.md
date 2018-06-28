@@ -28,8 +28,6 @@ DevTools) is used to help the DOM's _methods_ find the right nodes.
 1. Describe how the DOM works as a tree
 2. Define the computer science version of "Tree"
 3. Ask the DOM to find or "select" an HTML element or elements in the rendered page
-4. Remove the selected element(s) or insert a new element (and / or)
-5. Adjust a property of the selected element(s)
 
 ## Define the Computer Science Version of "Tree"
 
