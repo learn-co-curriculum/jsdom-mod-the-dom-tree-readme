@@ -12,7 +12,7 @@ In previous lessons we were given the command to find the HTML element we
 wanted to delete:
 
 ```javascript
-`document.querySelector(_selector_).remove()`
+document.querySelector( selector ).remove()
 ```
 
 In this lesson, we'll learn the _methods_ on the DOM we need to use to find (or
