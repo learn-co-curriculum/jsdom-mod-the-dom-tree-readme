@@ -9,18 +9,22 @@ Recall that DOM programming is using JavaScript to:
 3. Adjust a property of the selected element(s)
 
 In previous lessons we were given the command to find the HTML element we
-wanted to delete. In this lesson, we'll learn the _methods_ on the DOM we need
-to use  to find (or "select") the HTML element.
+wanted to delete: `document.querySelector(_selector_).remove()`. In this
+lesson, we'll learn the _methods_ on the DOM we need to use  to find (or
+"select") the HTML element. In later lessons we'll learn other methods, like
+`remove()` to change the elements.
 
-To understand those _methods_, we need to take a quick moment to talk about how
-the DOM tree (i.e. what we see in the 'Elements' panel of our DevTools) is used
-to help the DOM's _methods_ find the right nodes.
+To understand those "finding" _methods_, we need to take a quick moment to talk
+about how the DOM tree (i.e. what we see in the 'Elements' panel of our
+DevTools) is used to help the DOM's _methods_ find the right nodes.
 
 ## Objectives
 
-1. Ask the DOM to find or "select" an HTML element or elements in the rendered page
-2. Remove the selected element(s) or insert a new element (and / or)
-3. Adjust a property of the selected element(s)
+1. Describe How the DOM Works as a Tree
+2. Define the Computer Science Version of "Tree"
+3. Ask the DOM to find or "select" an HTML element or elements in the rendered page
+4. Remove the selected element(s) or insert a new element (and / or)
+5. Adjust a property of the selected element(s)
 
 ## Define the Computer Science Version of "Tree"
 
