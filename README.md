@@ -106,7 +106,7 @@ We could simply treat it as the tree
  "Hello!"     "Sup?"
 ```
 
-## Practice Exploring the DOM
+## Ask the DOM To Find Or "select" An HTML Element or Elements in the Rendered Page
 
 Our tree is organized in such a way that a node's metadata doesn't interfere
 with finding its children. Not only does providing additional information about
