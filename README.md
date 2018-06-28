@@ -112,6 +112,10 @@ Our tree is organized in such a way that a node's metadata doesn't interfere
 with finding its children. Not only does providing additional information about
 a node via HTML make it more _useful_, it also makes it easier to find.
 
+For the following exercises, you can experiment with _any_ page on the
+Internet. But, if you want a familiar page,
+[https://learn.co/tracks/javascript-with-style][https://learn.co/tracks/javascript-with-style] is there for you.
+
 ### Finding a Node
 
 JavaScript exposes a few ways of finding DOM nodes directly, or via other
@@ -124,8 +128,10 @@ This one is your laser-beam precision scalpel.
 This method provides the quickest access to a node, but it requires that we
 know something very specific about it — its `id`. Since IDs must be unique,
 this method can only return one element. If you have two elements with the same
-ID, this method returns the first one — keep your IDs unique! Incidentally an
-HTML validator will detect reuse of an `id` and will not validate your page.
+ID, this method returns the first one — keep your IDs unique! Also an HTML
+validator will detect reuse of an `id` and _will not_ validate your page. So
+writing valid HTML is just a good idea.
+
 Given the following DOM tree:
 
 ``` html
@@ -140,7 +146,7 @@ Notice how the `id` that we pass to `getElementById` is identical to the `id` in
 
 **Try it out!**
 
-Open up your web inspector (command+option+j on OS X) and find an element on
+Open up your DevTools  (Command + Option + j on OS X) and find an element on
 the page — make note of its `id`. Then open up your console, type
 `document.getElementById('theIdYouTookNoteOf')`, and check out your handy-dandy
 DOM node.
@@ -179,8 +185,8 @@ We could find all of the elements with the class name "banner" by calling
 
 **Try it out!**
 
-Inspect the web page again, this time making note of a className. Get all
-elements with that className and give 'em a look. On the returned object you
+Inspect the web page again, this time making note of a `className`. Get all
+elements with that `className` and give 'em a look. On the returned object you
 can use the `.length` property to find out how many came back.
 
 If you recall the `for` loop syntax you might try to write a loop which prints
