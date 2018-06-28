@@ -18,9 +18,9 @@ to help the DOM's _methods_ find the right nodes.
 
 ## Objectives
 
-1. Define the computer science version of "tree"
-2. Describe how the DOM works as a tree
-3. Explain the DOM _methods_ used to find HTML elements
+1. Ask the DOM to find or "select" an HTML element or elements in the rendered page
+2. Remove the selected element(s) or insert a new element (and / or)
+3. Adjust a property of the selected element(s)
 
 ## Define the Computer Science Version of "Tree"
 
