@@ -50,8 +50,8 @@ elements. So basically, we can imagine a tree turned on its head.
 An interesting property of trees is that every tree can contain _subtrees_,
 which we can treat independently of their parent trees.
 
-Practically speaking, the DOM begins at `<html>`, but we should think carefully
-about manipulating what's between the `<head></head>` tags. Instead, we can look
+Practically speaking, the DOM begins at `<html>`, but we should avoid
+changing what's between the `<head></head>` tags yet. Instead, we can look
 at the DOM subtree with its root at `<body>` and only deal with things that will
 be visible on the page. Within that tree, we might also deal with subtrees. So,
 for example, if we have
