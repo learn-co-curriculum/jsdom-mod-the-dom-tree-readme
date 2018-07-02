@@ -113,8 +113,7 @@ with finding its children. Not only does providing additional information about
 a node via HTML make it more _useful_, it also makes it easier to find.
 
 For the following exercises, you can experiment with _any_ page on the
-Internet. But, if you want a familiar page,
-[https://learn.co/tracks/javascript-with-style][https://learn.co/tracks/javascript-with-style] is there for you.
+Internet. It's fun to change "The New York Times" or Instagram.
 
 ### Finding a Node
 
